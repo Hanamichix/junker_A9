@@ -264,5 +264,11 @@ body {
       border-top: 5px solid green;
   }
 
+  .btn-lg {
+    margin-top: 30;
+    height: 50;
+    width: 100%;
+  }
+
 
 

@@ -179,14 +179,14 @@ header{
 
 #form{
     height: 150%;   
-    background-color: #98d4f3;
+    background-color: white;
     overflow: hidden;
     position: relative;
     
 }
 form{
     margin: 0 auto;
-    width: 500px;
+    width: ;
     padding-top: 40px;
     color: white;
     position: relative;
@@ -197,9 +197,9 @@ label, input, textarea{
     display: block; 
 }
 input, textarea{
-    width: 500px;   
+    width: 100%;   
     border: none;
-    border-radius: 20px;
+    border-radius: 1px;
     outline: none;
     padding: 10px;
     font-size: 1em;
@@ -208,7 +208,7 @@ input, textarea{
     -webkit-transition: border 0.5s;
     -moz-transition: border 0.5s;
     -o-transition: border 0.5s;
-    border: solid 3px #98d4f3;  
+    border: solid 1px black;  
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
@@ -225,7 +225,7 @@ textarea{
 }
 input[type="submit"]{
     background-color: #F90;
-    color: white;
+    color: black;
     height: 50px;
     cursor: pointer;
     margin-top: 30px;
@@ -243,6 +243,7 @@ label{
     font-size: 1.5em;
     margin-top: 20px;
     padding-left: 20px;
+    color: black;
 }
 .formgroup, .formgroup-active, .formgroup-error{
     background-repeat: no-repeat;
@@ -252,7 +253,7 @@ label{
     -webkit-transition: background-image 0.7s;
     -moz-transition: background-image 0.7s;
     -o-transition: background-image 0.7s;
-    width: 566px;
+    width: 100%;
     padding-top: 2px;
 }
 
@@ -266,6 +267,16 @@ label{
     background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
     color: red;
 }
+#waterform{
+    width: 100%;
+}
+
+#bt {
+    border: white;
+}
+
+
+
     </style> 
 
 </head>
@@ -279,7 +290,7 @@ label{
         <div class = "navbar-header">
         <span style="font-size:30px;float:left; width:20%; top:5px " onclick="openNav()" class = "glyphicon">&#xe055;</span>
         <span style="font-size:30px;float:right; top:5px"  class = "glyphicon"><a href="index" style="color:black">&#xe021;</a></span>
-        <span style="font-size:30px; margin:5 20%">New</span>
+        <span style="font-size:30px">New Post</span>
         <!--
 
         <ul class="nav navbar-nav">
@@ -296,17 +307,21 @@ label{
 
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="match">Matches</a>
       <a href="browse">Browse</a>
-      <a href="profile">Profile</a>
+      <a href="match">Matches</a>
+      <a href="newpost">Create New Post</a>
       <a href="myPost">My Posts</a>
+      <a href="profile">Profile</a>
+      <a href="index">Log Out</a>
 
 
     </div>
-    <div id="form">
+    <div id="form" >
+    <!--
 
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
+        -->
 
         <form id="waterform" method="get" action = "/added">
 
@@ -330,7 +345,7 @@ label{
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
             </div>
 
-            <input type="submit" value="Submit!" /> 
+            <input type="submit" value="Submit!" id = "bt"/> 
         </form>
     </div>
     </div>

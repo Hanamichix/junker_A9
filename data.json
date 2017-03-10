@@ -91,6 +91,7 @@
 					"tradewith": 0
 				}
 			],
+			
 			"deal" : false			
 		},
 		{
@@ -116,6 +117,7 @@
 				}
 
 			],
+			
 			"deal" : true			
 		},
 		{
@@ -136,6 +138,7 @@
 					"tradewith": null
 				}
 			],
+			
 			"deal" : false			
 
 
@@ -158,6 +161,7 @@
 					"tradewith": 2
 				}
 			],
+			
 			"deal" : false			
 
 		},
@@ -179,6 +183,7 @@
 					"tradewith": null
 				}
 			],
+			
 			"deal" : false			
 
 
